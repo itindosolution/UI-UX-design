@@ -1,0 +1,220 @@
+<DOCTYPE! html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Demo</title>
+    </head>
+    <body>
+        <header>
+            <div class="flex-container-head">
+                <img src="./assets/gambar/logo.png" style="float: left; height: 75px; margin: 10px 0px 0px 40px;">
+                <span class="font-logo">Solution your tech problem.</span>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#service">Layanan</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>   
+
+        <main>
+            <div id="content">
+                <article id="home" class="flex-container-home">
+                    <div class="flex-container-home-column">
+                        <h1 id="home">IT INDO<br>Solution</h1>
+                        <div>
+                        <p>IT Indo Solution merupakan penyedia layanan jasa yang bergerak dibidang Teknologi Informasi,
+                        menyediakan barang dan jasa konsultasi dalam dunia komputerisasi
+                        seperti software, hardware, jaringan dan lain-lain.</p>
+                        <a href="#" class="read-link">Baca Lebih Lengkap</a>
+                        </div>
+                    </div>
+                    <img src="./assets/gambar/index-hand-01.png" alt="hand">
+                </article>
+    
+                <article id="service">
+                    <section class="slide active">
+                        <div class="card">
+                                <img src="./assets/gambar/hardware-01.png" class="card-img">
+                            <div class="card-content">
+                                <p class="card-theme">Layanan</p>
+                                <h2 class="card-header">Hardware</h2>
+                                <p class="card-para">Kami menyediakan barang dan 
+                                jasa service hardware teknologi seperti 
+                                perangkat komputer, laptop dan mobile.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <div class="card-02">
+                            <img src="./assets/gambar/software-01.png" class="card-img">
+                            <div class="card-content">
+                                <p class="card-theme">Layanan</p>
+                                <h2 class="card-header">Software</h2>
+                                <p class="card-para">Kami menyediakan layanan jasa untuk 
+                                pembuatan aplikasi berbasis web, dekstop dan mobile.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <div class="card">
+                            <img src="./assets/gambar/jaringan-01.png" class="card-img">
+                            <div class="card-content">
+                                <p class="card-theme">Layanan</p>
+                                <h2 class="card-header">Jaringan</h2>
+                                <p class="card-para">Kami menyediakan barang dan jasa service smarthome untuk jaringan internet, telepon, dan cctv.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article id="about" class="body-company-column">
+                        <h2 class="aboutus">Tentang Kami</h2>
+                        <p class="about-para">Kami adalah 3 Mahasiswa Universitas Bina Sarana Informatika Fakultas Teknik Informatika, yang mempunyai mimpi ingin menciptakan lapangan kerja untuk seluruh pemuda Indonesia.</p>
+                        <div class="body-company">
+                            <section class="company">
+                                <div class="card-comp">
+                                    <div class="card-comp-content">
+                                        <div class="comp-img">
+                                            <img src="./assets/gambar/agung.png" alt="ag">
+                                        </div>
+                                        <div class="name-profession">
+                                            <span class="name">Agung Maulana</span>
+                                            <span class="profession">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </section>
+                            <section class="company">
+                                <div class="card-comp">
+                                    <div class="card-comp-content">
+                                        <div class="comp-img">
+                                            <img src="./assets/gambar/sangga.png" alt="sg">
+                                        </div>
+                                        <div class="name-profession">
+                                            <span class="name">Sangga Yasa</span>
+                                            <span class="profession">Front-End Developer</span>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </section>
+                            <section class="company">
+                                <div class="card-comp">
+                                        <div class="card-comp-content">
+                                            <div class="comp-img">
+                                                <img src="./assets/gambar/rizat.png" alt="rz">
+                                            </div>
+                                            <div class="name-profession">
+                                                <span class="name">Rizat Sakmir</span>
+                                                <span class="profession">Back-End Developer</span>
+                                            </div>
+                                        </div>
+                                 </div>    
+                            </section>
+                        </div>
+                </article>
+    
+                <article id="contact" class="form-contact">
+                    <h2 class="contact">Hubungi Kami</h2>
+                    <div class="form-group">
+                        <form action="#" method="POST" onSubmit="validasi()">
+                            <div>
+                                <label>
+                                    <input type="text" name="nama" id="nama" placeholder="Nama Lengkap">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="email" name="email" placeholder="Email">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="number" name="number" placeholder="Nomor Telepon">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                <textarea cols="40" rows="5" name="pesan" id="pesan" placeholder="Masukan Pesan"></textarea></label>
+                            </div>
+                            <div>
+                                <input type="submit" value="Kirim" class="tombol">
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+            
+
+            <aside>
+                <article class="profile">
+                    <header>
+                        <h2 class="bio">Biodata</h2>
+                            <figure>
+                                <img src="./assets/gambar/profile.jpg" alt="profile">
+                                <figcaption>Agung Maulana</figcaption>
+                            </figure>
+                    </header>
+                    <section>
+                        <table>
+                            <tr>
+                                <th>Kampus</th>
+                                <td>Universitas Bina Sarana Informatika</td>
+                            </tr>
+                            <tr>
+                                <th>Fakultas</th>
+                                <td>Teknik Informatika</td>
+                            </tr>
+                            <tr>
+                                <th>TTL</th>
+                                <td>Jakarta, 16 Juli 1998</td>
+                            </tr>
+                            <tr>
+                                <th>Umur</th>
+                                <td>24 Tahun</td>
+                            </tr>
+                            <tr>
+                                <th>Nomor HP</th>
+                                <td>081410470445</td>
+                            </tr>
+                            <tr>
+                                <th>Pekerjaan</th>
+                                <td>Tenaga Kependidikan</td>
+                            </tr>
+                            <tr>
+                                <th>Alamat</th>
+                                <td>Jakarta Timur</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                </article>
+            </aside>
+
+        </main>
+        <footer>
+            <p>Demo Web IT Indo Solution Copyright &copy; 2022, Agung Maulana</p>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        function validasi() {
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let alamat = document.getElementById("number").value;
+            let pesan = document.getElementById("pesan").value;
+            if (nama != "" && email!="" && number !="" && pesan!="") {
+                return true;
+            }else{
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+        }
+    </script>
+</html>
+    
+    

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@media screen and (max-width: 600px){
+    #content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex-container-head{
+        width: 100%;
+        padding: 0;
+    }
+
+    .slide{
+        width: 100%;
+        padding: 0;
+    }
+
+    .body-company-column{
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flex-container-head{
+    display: flex;
+    width: 100%;
+}
+
+.font-logo {
+    float: left;
+    font-size: 15px;
+    color:#0E185F;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+nav {
+    float: right;
+    padding: 20px;
+    margin: 15px 0px 10px 400px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #0E185F;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-weight: 700;
+}
+
+#content{
+    float: center;
+    width: 100%;
+
+}
+
+.flex-container-home{
+    display: flex;
+
+    width: 100%;
+    padding-bottom: 60px;
+}
+.flex-container-home-column{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: auto 0;
+}
+.flex-container-home-column > h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+    padding: 10px;
+    margin: 20px 75px 0px 40px;
+    color: #0E185F;
+}
+.flex-container-home-column > div {
+    line-height: 25px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+    width: 400px;
+    margin: 5px 20px 0px 40px;
+}
+.read-link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 300;
+}
+.read-link:after {
+    content: "→";
+    margin-left: 2px;
+}
+.read-link:hover {
+    font-weight: 500;
+}
+.flex-container-home img {
+    margin-top: 50px;
+    height: 550px;
+    float: right;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: auto 0;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+}
+.card-02 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background: #fff;
+}
+
+.card-img {
+    box-sizing: border-box;
+    width: 50%;
+    background: #f1f1f5;
+}
+
+.card-content {
+    padding: 10% 5%;
+    box-sizing: border-box;
+    width: 50%;
+    background: #0E185F;
+}
+.card-theme {
+    font-weight: 900;
+    font-size: 1.7vmin;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #E8FFC2;
+}
+.card-header{
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 0.91;
+    margin: 3vmin 0 3.5vmin;
+    color: #E8FFC2;
+}
+.card-para{
+    font-size: 2vmin;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+    color: #E8FFC2;
+}
+
+.aboutus{
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 0.91;
+    color: #0E185F;
+}
+.about-para{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+    width: 600px;
+    margin: 5px 20px 0px 40px;
+}
+.body-company{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+.body-company-column{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+.company .card-comp .comp-img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: -webkit-linear-gradient(bottom, #00FFDD, #2FA4FF);
+}
+.company .card-comp .comp-img img{ 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.comp-img img:hover{
+    cursor: pointer;
+    size-adjust: 100%;
+}
+.card-comp{
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+.card-comp::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 327px;
+    background: -webkit-linear-gradient(bottom, #00FFDD, #2FA4FF);
+    border-radius: 20px 20px 0 0;
+}
+.card-comp .card-comp-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+
+}
+.name-profession{
+    margin-top: 10px;
+    color: #0E185F;
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.form-contact{
+    width: 100%;
+    height: 100%;
+    background: #0E185F;
+    padding-top: 10px;
+}
+.contact{
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 0.91;
+    color: #fff;
+}
+.form-group{
+    padding: 1.5em;
+    margin: 2em auto;
+    width: 75%;
+    background:#fff;
+    border-radius: 3px;
+}
+.label{
+    font-size: 15pt;
+    color: #555;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+.tombol {
+    background: #0E185F;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+    margin-top: 10px;
+}
+.tombol:hover{
+    cursor: pointer;
+}
+
+aside {
+    width: 100%;
+    background: #fff;
+    padding-top: 10px;
+} 
+.bio{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 0.91;
+    color: #0E185F;
+}
+.profile {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin-left: 300px;
+}
+.profile img{
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: #555;
+}
+table {
+    padding: 50px;
+    line-height: 25px;
+    margin: 50px 10px 0 0;
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+footer {
+	padding: 2px;
+	background-color: #fff;
+	color: #0E185F;
+	text-align: center;
+	font-weight: 500;
+}
