@@ -25,19 +25,25 @@ function run(){
     document.addEventListener('scroll',()=>{
         const clientHeight = document.documentElement.clientHeight;
         const videoHardwareY = videoHardware.getBoundingClientRect().y;
+        const videoHardwareHeight = videoHardware.getBoundingClientRect().height;
         const videoSoftwareY = videoSoftware.getBoundingClientRect().y;
+        const videoSoftwareHeight = videoSoftware.getBoundingClientRect().height;
         const videoInfraY = videoInfra.getBoundingClientRect().y;
+        const videoInfraHeight = videoInfra.getBoundingClientRect().height;
+        
 
-        if(clientHeight > videoHardwareY && videoHardwareY > 0){
-            setTimeout(videoHardware.play(), 2000);
+        if(clientHeight > videoHardwareY + videoHardwareHeight * 2/3  && videoHardwareY > 0  ){
+            videoHardware.play();
         }
 
-        if(clientHeight > videoSoftwareY && videoSoftwareY > 0){
+        if(clientHeight > videoSoftwareY + videoSoftwareHeight * 2/3 && videoSoftwareY > 0 ){
             videoSoftware.play();
+            state = true;
         }
 
-        if(clientHeight > videoInfraY && videoInfraY > 0){
+        if(clientHeight > videoInfraY + videoInfraHeight * 2/3 && videoInfraY > 0 ){
             videoInfra.play();
+            state = true;
         }
     });
 
