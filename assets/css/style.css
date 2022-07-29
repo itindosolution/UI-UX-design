@@ -12,7 +12,7 @@ html body {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: white;
+    background: #FFF;
 }
 #content{
     float: center;
@@ -139,21 +139,21 @@ nav a:hover{
 .card-img {
     box-sizing: border-box;
     width: 50%;
-    background: #f1f1f5;
+    background: #fff;
 }
 
 .card-content {
     padding: 10% 5%;
     box-sizing: border-box;
     width: 50%;
-    background: #0E185F;
+    background: #FFF;
 }
 .card-theme {
     font-weight: 900;
     font-size: 1.7vmin;
     text-transform: uppercase;
     letter-spacing: 10px;
-    color: #E8FFC2;
+    color: #0E185F;
 }
 .card-header{
     font-weight: 700;
@@ -161,14 +161,14 @@ nav a:hover{
     text-transform: capitalize;
     line-height: 0.91;
     margin: 3vmin 0 3.5vmin;
-    color: #E8FFC2;
+    color: #0E185F;
 }
 .card-para{
     font-size: 2vmin;
     line-height: 1.8;
     font-weight: 300;
     margin-bottom: 2.5vmin;
-    color: #E8FFC2;
+    color: #0E185F;
 }
 /*Paket Layanan*/
 .product{
@@ -229,7 +229,8 @@ nav a:hover{
     border: none;
     color: #fff;
     padding: 10px;
-    width: 100%;
+    margin:10px;
+    width: 50%;
     font-weight: 600;
     cursor: pointer;
 }
@@ -269,7 +270,7 @@ nav a:hover{
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: -webkit-linear-gradient(bottom, #00FFDD, #2FA4FF);
+    background: -webkit-linear-gradient(bottom, #10e2c6, #2FA4FF);
 }
 .company .card-comp .comp-img img{ 
     height: 100%;
