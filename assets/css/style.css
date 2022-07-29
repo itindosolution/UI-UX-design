@@ -6,13 +6,18 @@
 
 html body {
     height: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     background: white;
+}
+#content{
+    float: center;
+    width: 100%;
+    min-height: 200px;
 }
 
 /*Headear*/
@@ -26,8 +31,7 @@ body {
     font-size: 15px;
     color:#0E185F;
     padding: 10px;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 /*Navigasi*/
 nav {
@@ -59,11 +63,7 @@ nav a {
 nav a:hover{
     font-weight: 700;
 }
-#content{
-    float: center;
-    width: 100%;
 
-}
 /*Beranda*/
 .flex-container-home{
     display: flex;
@@ -110,7 +110,6 @@ nav a:hover{
 .flex-container-home img {
     margin-top: 50px;
     height: 550px;
-    float: right;
 }
 /*Layanan Kami*/
 .slide {
@@ -281,7 +280,8 @@ nav a:hover{
 }
 .comp-img img:hover{
     cursor: pointer;
-    size-adjust: 100%;
+    transform: scale(130%);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
 }
 .card-comp{
     background: #fff;
